@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes moveBackground {
+  0% { transform: translateX(0) translateY(0); }
+  50% { transform: translateX(20px) translateY(20px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+
+.animate-move {
+  animation: moveBackground 8s ease-in-out infinite;
+}
